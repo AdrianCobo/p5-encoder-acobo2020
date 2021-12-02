@@ -6,9 +6,9 @@ El objetivo de este esta práctica es tener la primera toma de contacto con un e
 
 ### Funcionamiento del programa
 
-Nuestro programa se encargara de ir contando cuantos huecos han atravesado el encoder durante 30 segundos, despues, simplemente dividira
-la cuenta entre el numero de huecos para obtener las vueltas, multiplicara el numero de vueltas por 2*pi para obtener las revoluciones, y
-dividira entre el numero de segundos trancurridos y multiplicara por 60 para obtener las revoluciones por minuto.
+Nuestro programa se encargará de ir contando cuantos huecos han atravesado el encoder durante 30 segundos, después, simplemente dividirá
+la cuenta entre el numero de huecos para obtener las vueltas, multiplicará el número de vueltas por 2*pi para obtener las revoluciones, 
+dividirá entre el numero de segundos trancurridos y multiplicará por 60 para obtener las revoluciones por minuto.
 
 ```python
     def comportamintoEncoder (canal):
@@ -44,6 +44,6 @@ Aunque de primeras puedas pensar que entonces se va a contar 2 veces el hueco al
 hilo1 = threading.Thread(target=GPIO.add_event_detect(pulsadorGPIO1, GPIO.BOTH,
       callback=comportamintoEncoder, bouncetime=1))
 ```
-Para ver un video de la practica y el esquema de conexion pulsa [aqui]([aqui](https://drive.google.com/file/d/1LNC3v44mUW_4co6VeOfFKkEQ0VkQVgdz/view?usp=sharing).
+Para ver un video de la practica y el esquema de conexion pulsa [aqui](https://drive.google.com/file/d/1NYeSmyvSBkEbjDKVkwbBU8ut2GSTOkmq/view?usp=sharing).
 
 Para cualquier duda: <a.cobo.2020@alumos.urjc.es>
